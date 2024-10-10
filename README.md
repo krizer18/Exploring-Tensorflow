@@ -26,4 +26,32 @@ To install the required libraries, you can use pip:
 
 ```bash
 pip install tensorflow numpy matplotlib seaborn scikit-learn plotly scipy
+```
+##  Model Architecture
 
+
+The model is built using a sequential CNN architecture with three convolutional layers followed by max-pooling layers.
+
+
+## Future Improvements
+
+
+1. Address the model's bias towards cats by:
+   - Balancing the dataset
+   - Adjusting class weights
+   - Fine-tuning the model architecture
+2. Increase the number of training epochs to potentially improve accuracy
+3. Implement data augmentation techniques to enhance model generalization
+4. Experiment with different CNN architectures or transfer learning from pre-trained models
+
+## What I have learnt 
+
+Through this project, which serves as a stepping stone into my machine learning journey, I have learned several important techniques necessary for improving a model's accuracy. This project deepened my understanding of the role batch sizes play in model performance.
+
+Using the Epoch vs. Accuracy graph, I observed the difference in noise between larger and smaller batch sizes. When using a stochastic gradient descent approach, the graph appeared quite noisy, making it difficult to extract clear conclusions. However, with a batch gradient descent approach, I quickly realized that my computer's memory could not handle an entire batch of over 25,000 photos, causing it to crash. After experimenting, I found that setting the batch size to around 750 to 1000 photos worked well.
+
+Additionally, I learned that choosing the right number of epochs is crucial. Too few epochs prevent the model from reaching an acceptable accuracy, while too many can cause the model to overfit and incorrectly predict cats and dogs.
+
+Furthermore, I realized the importance of APIs as powerful tools for innovation and collaboration. Thanks to Kaggle’s API, I was able to readily access images for training, validation, and testing.
+
+There have been many other valuable lessons throughout the process of building this project, and I look forward to expanding my knowledge through future projects.
