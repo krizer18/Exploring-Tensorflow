@@ -32,6 +32,16 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn plotly scipy
 
 The model is built using a sequential CNN architecture with three convolutional layers followed by max-pooling layers.
 
+## Model Performance
+The model's performance improved over the course of training:
+
+- Training Duration: 50s
+- Steps per Epoch: 3s/step
+- Final Accuracy: 0.7181
+- Final Loss: 1.0715
+
+The training process showed improvement in both training and validation accuracy over 3 epochs, with the validation accuracy slightly outperforming the training accuracy.
+
 
 ## Future Improvements
 
